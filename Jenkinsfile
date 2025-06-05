@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'principal' }
+    agent { label 'nodo' }
     
     triggers {
         // Ejecutar todos los días a las 2 AM
