@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'github-token-sergio' }
+    agent { label 'principal' }
     
     triggers {
         // Ejecutar todos los días a las 2 AM
