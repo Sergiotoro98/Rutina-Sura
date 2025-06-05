@@ -1,0 +1,46 @@
+Rutina operativa Rabbitmq
+2025-06-05 07:10:01
+
+Instancia: mqcorppdn.suramericana.com
+Conexiones_Activas: 411
+Mensajes_Totales: 17
+Mensajes_Listos: 0
+Mensajes_No_Confirmados: 17
+Consumidores: 1666
+Nodos:
+  - Nodo: rabbit@large-meerkat-01, Memoria Utilizada: 504.25MB, Porcentaje Memoria: 33.78%, Estado_Nodo: Running
+  - Nodo: rabbit@large-meerkat-02, Memoria Utilizada: 415.17MB, Porcentaje Memoria: 27.82%, Estado_Nodo: Running
+  - Nodo: rabbit@large-meerkat-03, Memoria Utilizada: 419.41MB, Porcentaje Memoria: 28.10%, Estado_Nodo: Running
+
+Instancia: rabbitmqcvconsolapdn.suramericana.com
+Conexiones_Activas: 716
+Mensajes_Totales: 309305
+Mensajes_Listos: 309228
+Mensajes_No_Confirmados: 77
+Consumidores: 468
+Nodos:
+  - Nodo: rabbit@sweet-magenta-monkey-01, Memoria Utilizada: 426.86MB, Porcentaje Memoria: 28.60%, Estado_Nodo: Running
+  - Nodo: rabbit@sweet-magenta-monkey-02, Memoria Utilizada: 393.39MB, Porcentaje Memoria: 26.35%, Estado_Nodo: Running
+  - Nodo: rabbit@sweet-magenta-monkey-03, Memoria Utilizada: 428.58MB, Porcentaje Memoria: 28.71%, Estado_Nodo: Running
+
+Instancia: msg.suramericana.com.co
+Conexiones_Activas: 1729
+Mensajes_Totales: 129553
+Mensajes_Listos: 129372
+Mensajes_No_Confirmados: 181
+Consumidores: 1145
+Nodos:
+  - Nodo: rabbit@blond-jellyfish-01, Memoria Utilizada: 1732.07MB, Porcentaje Memoria: 55.56%, Estado_Nodo: Running
+  - Nodo: rabbit@blond-jellyfish-02, Memoria Utilizada: 1216.38MB, Porcentaje Memoria: 39.02%, Estado_Nodo: Running
+
+Instancia: msgss.suramericana.com.co
+Conexiones_Activas: 459
+Mensajes_Totales: 45901
+Mensajes_Listos: 45769
+Mensajes_No_Confirmados: 132
+Consumidores: 465
+Nodos:
+  - Nodo: rabbit@sprightly-finch-01, Memoria Utilizada: 1591.31MB, Porcentaje Memoria: 51.04%, Estado_Nodo: Running
+  - Nodo: rabbit@sprightly-finch-02, Memoria Utilizada: 1759.11MB, Porcentaje Memoria: 56.43%, Estado_Nodo: Running
+
+Cordialmente
