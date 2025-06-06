@@ -1,13 +1,13 @@
 ###BIN /BASH
-
-echo Buenos dias,  > /opt/automatizacion/rabbit-EO/rabbitmq.log
-echo Rutina operativa Rabbitmq > /opt/automatizacion/rabbit-EO/rabbitmq.log 
-date "+%Y-%m-%d %H:%M:%S" >> /opt/automatizacion/rabbit-EO/rabbitmq.log
-/usr/local/bin/python3.11 /opt/automatizacion/rabbit-EO/rabbit.py >> /opt/automatizacion/rabbit-EO/rabbitmq.log
+echo Buenos dias,  > ${WORKSPACE}/${PIPELINE_NAME}/rabbitmq.log
+echo Rutina operativa Rabbitmq > ${WORKSPACE}/${PIPELINE_NAME}/rabbitmq.log
+date "+%Y-%m-%d %H:%M:%S" >> ${WORKSPACE}/${PIPELINE_NAME}/rabbitmq.log
+/usr/local/bin/python3.11 ${WORKSPACE}/${PIPELINE_NAME}/rabbit.py >> ${WORKSPACE}/${PIPELINE_NAME}/rabbitmq.log
 sleep 5
-echo >> /opt/automatizacion/rabbit-EO/rabbitmq.log
+echo >> ${WORKSPACE}/${PIPELINE_NAME}/rabbitmq.log
 
-echo Cordialmente >> /opt/automatizacion/rabbit-EO/rabbitmq.log
+echo Cordialmente >> ${WORKSPACE}/${PIPELINE_NAME}/rabbitmq.log
 
-/usr/local/bin/python3.11 /opt/automatizacion/rabbit-EO/correo.py
+/usr/local/bin/python3.11 ${WORKSPACE}/${PIPELINE_NAME}/correo.py
+
 
