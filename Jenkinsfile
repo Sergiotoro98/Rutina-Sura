@@ -2,11 +2,11 @@ pipeline {
     agent { label 'Worker-1' }
 
     triggers {
-        cron('H 15 * * *') // 2 AM hora Colombia
+        cron('H 15 * * *')
     }
 
     stages {
-        stage('Preparar entorno') {
+        stage('Preparar script') {
             steps {
                 sh 'chmod +x rutinasura.sh'
             }
@@ -18,9 +18,9 @@ pipeline {
             }
         }
 
-        stage('Verificar resultados') {
+        stage('Finalizar') {
             steps {
-                sh 'echo "Verificación completa"' // Aquí podrías agregar validaciones
+                echo 'Rutina completada'
             }
         }
     }
