@@ -1,16 +1,26 @@
 pipeline {
     agent { label 'Worker-1' }
-    
+
     triggers {
-        // Ejecutar todos los días a las 2 AM
-        cron('H 15 * * *')
+        cron('H 15 * * *') // 2 AM hora Colombia
     }
 
     stages {
-        stage('Ejecutar respaldo') {
+        stage('Preparar entorno') {
             steps {
                 sh 'chmod +x rutinasura.sh'
+            }
+        }
+
+        stage('Ejecutar respaldo') {
+            steps {
                 sh './rutinasura.sh'
+            }
+        }
+
+        stage('Verificar resultados') {
+            steps {
+                sh 'echo "Verificación completa"' // Aquí podrías agregar validaciones
             }
         }
     }
