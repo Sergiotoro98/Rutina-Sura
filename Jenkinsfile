@@ -10,7 +10,7 @@ pipeline {
         stage('Ejecutar respaldo') {
             steps {
                 sh 'chmod +x rutinasura.sh'
-                sh './rutina.sh'
+                sh './rutinasura.sh'
             }
         }
     }
