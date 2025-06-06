@@ -2,7 +2,7 @@ pipeline {
     agent { label 'Worker-1' }
 
     triggers {
-        cron('16 13 * * *')
+        cron('21 13 * * *')
     }
 
     stages {
